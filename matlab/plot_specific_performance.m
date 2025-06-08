@@ -1,0 +1,33 @@
+function [] = plot_specific_performance(all_performance, test_name, detail_index)
+    tests = fieldnames(all_performance);
+    tests_names = cellfun(@get_result_title, tests, 'un', 0);
+    ntests = length(tests);
+    myColors = jet(ntests);
+    
+    graph_legend = {'Schur decomposition'       ...
+		,'Eigenvalues clustering'       ...
+		,'Eigenvalues permutation'      ...
+		,'Eigenvalues sorting'          ...
+		,'Eigenvalues reordering'       ...
+		,'Polynomial calculation'       ...
+		,'Block Parlett Recurrence'     ...
+		,'Sylvester solver'             ...
+        ,'Parlett Recurrence'           ...
+		,'Final multiplication'         ...
+        };
+    
+    % new_test_name = sprintf('%s (%s)', test_name, graph_legend{detail_index});
+    new_test_name = test_name;
+    title_name = get_result_title(new_test_name);
+    figure('Name', title_name, 'Position', [10,10,1280,720]);
+    hold on
+    for i=1:ntests
+        performance = all_performance.(tests{i});
+        stats = get_detailed_data(performance, detail_index);
+        plot(cell2mat(performance(:,1)), stats, 'color', myColors(i,:));
+    end
+    xlabel('dimension');
+    ylabel('time (s)');
+    set_figure_props(title_name, tests_names);
+    %figure        
+end

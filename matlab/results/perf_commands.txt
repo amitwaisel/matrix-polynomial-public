@@ -1,0 +1,34 @@
+[~,f,~]=detailed_plot(perf_5_0_2.degree_2000, 'Degree 2000', mat_5_0.matlab_performance_2000, ps_options);
+
+perf_5_1 = benchmark_5_1(params);
+plot_performance(perf_5_1, 'Eigenvalue clusters', [], blocks_options)
+
+
+parlett_options = blocks_options;
+parlett_options.optional_details = [6 9 10];
+plot_performance(perf_5_2, 'Parlett recurrence technique', [], parlett_options)
+plot_specific_performance(perf_5_2, 'Parlett recurrence technique', 9)
+
+detailed_cpu_plot(perf_5_4_5, 'Detailed performance for different cores');
+plot_performance(perf_5_4_5, 'Parallelism over multiple cores');
+plot_cores_performance(perf_5_4_5, 'Speedup graph for multiple cores');
+
+perf_5_5 = benchmark_5_5(params);
+sort_options = struct(); sort_options.optional_details = [4,5];
+plot_performance(perf_5_5, 'Eigenvalues reordering techniques', [], sort_options)
+
+perf_5_6 = benchmark_5_6(params);
+params_degree = params;
+params_degree.iterations_to_average = 1;
+params_degree.size=2000;
+params_degree.degree_from=25;
+params_degree.degree_max=200;
+params_degree.degree_jump=25;
+[perf_5_6, mat_5_6] = benchmark_5_6(params_degree);
+detailed_degree_plot(params_degree, perf_5_6, mat_5_6)
+
+ps = perf_ps.vanloan_polynomial_calculation;
+ps = ps(:,2);
+cellfun(@(x) x/1e+3,ps,'un',0)
+ps = cellfun(@(x) x/1e+3,ps,'un',0)
+ps_options.ps = ps;

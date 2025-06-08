@@ -1,0 +1,18 @@
+RECSY v. 0.01 alpha 2003-02-12
+------------------------------
+
+This is a library for solving Sylvester-type matrix equations.
+
+Documentation is found in the docs subdirectory or at 
+http://www.cs.umu.se/~isak/recsy/
+
+The library is freely available for academic (non-commercial) 
+use, and is provided on an "as is" basis. Provided in this package 
+are parts of the SLICOT and LAPACK libraries, which themselves 
+may impose other terms. 
+
+Questions or comments to isak@cs.umu.se,
+Isak Jonsson, Dept. of Computing Science, 
+Umeå University, SE-901 87 SWEDEN
+
+

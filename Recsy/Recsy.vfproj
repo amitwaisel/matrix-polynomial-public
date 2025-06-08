@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectType="typeStaticLibrary" ProjectCreator="Intel Fortran" Keyword="Static Library" Version="11.0" ProjectIdGuid="{082F8153-0C3D-4233-9AFE-CE854632E1C6}">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32" OutputDirectory="$(SolutionDir)bin\$(Platform)_$(Configuration)" IntermediateDirectory="$(SolutionDir)obj\$(Platform)_$(Configuration)\$(ProjectName)" ConfigurationType="typeStaticLibrary">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" MultiProcessorCompilation="true" Optimization="optimizeDisabled" SourceFileFormat="fileFormatFree" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
+				<Tool Name="VFLibrarianTool"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/></Configuration>
+		<Configuration Name="Release|Win32" OutputDirectory="$(SolutionDir)bin\$(Platform)_$(Configuration)" IntermediateDirectory="$(SolutionDir)obj\$(Platform)_$(Configuration)\$(ProjectName)" ConfigurationType="typeStaticLibrary">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" MultiProcessorCompilation="true" SourceFileFormat="fileFormatFree"/>
+				<Tool Name="VFLibrarianTool"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/></Configuration>
+		<Configuration Name="Debug|x64" OutputDirectory="$(SolutionDir)bin\$(Platform)_$(Configuration)" IntermediateDirectory="$(SolutionDir)obj\$(Platform)_$(Configuration)\$(ProjectName)" ConfigurationType="typeStaticLibrary">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" MultiProcessorCompilation="true" Optimization="optimizeDisabled" SourceFileFormat="fileFormatFree" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
+				<Tool Name="VFLibrarianTool"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/></Configuration>
+		<Configuration Name="Release|x64" OutputDirectory="$(SolutionDir)bin\$(Platform)_$(Configuration)" IntermediateDirectory="$(SolutionDir)obj\$(Platform)_$(Configuration)\$(ProjectName)" ConfigurationType="typeStaticLibrary">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" MultiProcessorCompilation="true" SourceFileFormat="fileFormatFree"/>
+				<Tool Name="VFLibrarianTool"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<File RelativePath=".\dtgsyl.F"/>
+		<File RelativePath=".\dtrsyl.F"/>
+		<File RelativePath=".\RECGCSY.F"/>
+		<File RelativePath=".\RECGCSY_P.F"/>
+		<File RelativePath=".\RECGCSY_TR0.F"/>
+		<File RelativePath=".\RECGCSY_TR1.F"/>
+		<File RelativePath=".\RECGCSY_TR2.F"/>
+		<File RelativePath=".\RECGCSY_TR3.F"/>
+		<File RelativePath=".\RECGCSY_TR4.F"/>
+		<File RelativePath=".\RECGCSY_TR5.F"/>
+		<File RelativePath=".\RECGCSY_TR6.F"/>
+		<File RelativePath=".\RECGCSY_TR7.F"/>
+		<File RelativePath=".\RECGLYCT.F"/>
+		<File RelativePath=".\RECGLYCT_P.F"/>
+		<File RelativePath=".\RECGLYDT.F"/>
+		<File RelativePath=".\RECGLYDT_P.F"/>
+		<File RelativePath=".\RECGSYL.F"/>
+		<File RelativePath=".\RECGSYL_P.F"/>
+		<File RelativePath=".\RECGSYL_TR0.F"/>
+		<File RelativePath=".\RECGSYL_TR1.F"/>
+		<File RelativePath=".\RECGSYL_TR10.F"/>
+		<File RelativePath=".\RECGSYL_TR12.F"/>
+		<File RelativePath=".\RECGSYL_TR2.F"/>
+		<File RelativePath=".\RECGSYL_TR3.F"/>
+		<File RelativePath=".\RECGSYL_TR4.F"/>
+		<File RelativePath=".\RECGSYL_TR5.F"/>
+		<File RelativePath=".\RECGSYL_TR6.F"/>
+		<File RelativePath=".\RECGSYL_TR7.F"/>
+		<File RelativePath=".\RECLYCT.F"/>
+		<File RelativePath=".\RECLYCT_P.F"/>
+		<File RelativePath=".\RECLYDT.F"/>
+		<File RelativePath=".\RECLYDT_P.F"/>
+		<File RelativePath=".\RECSY_AXB.F"/>
+		<File RelativePath=".\RECSY_DECL.F"/>
+		<File RelativePath=".\RECSY_GEMM.F"/>
+		<File RelativePath=".\RECSY_MACHINE.F"/>
+		<File RelativePath=".\RECSY_SCAL.F"/>
+		<File RelativePath=".\RECSY_SOLVE_11.F"/>
+		<File RelativePath=".\RECSY_SOLVE_22.F"/>
+		<File RelativePath=".\RECSY_SOLVE_33.F"/>
+		<File RelativePath=".\RECSY_SOLVE_44.F"/>
+		<File RelativePath=".\RECSY_SOLVE_CP.F"/>
+		<File RelativePath=".\RECSY_SOLVE_NN.F"/>
+		<File RelativePath=".\RECSYCT.F"/>
+		<File RelativePath=".\RECSYCT_P.F"/>
+		<File RelativePath=".\RECSYCT_TR0.F"/>
+		<File RelativePath=".\RECSYCT_TR1.F"/>
+		<File RelativePath=".\RECSYCT_TR2.F"/>
+		<File RelativePath=".\RECSYCT_TR3.F"/>
+		<File RelativePath=".\RECSYCT_TR4.F"/>
+		<File RelativePath=".\RECSYCT_TR5.F"/>
+		<File RelativePath=".\RECSYCT_TR6.F"/>
+		<File RelativePath=".\RECSYCT_TR7.F"/>
+		<File RelativePath=".\RECSYDT.F"/>
+		<File RelativePath=".\RECSYDT_P.F"/>
+		<File RelativePath=".\RECSYDT_TR0.F"/>
+		<File RelativePath=".\RECSYDT_TR1.F"/>
+		<File RelativePath=".\RECSYDT_TR2.F"/>
+		<File RelativePath=".\RECSYDT_TR3.F"/>
+		<File RelativePath=".\RECSYDT_TR4.F"/>
+		<File RelativePath=".\RECSYDT_TR5.F"/>
+		<File RelativePath=".\RECSYDT_TR6.F"/>
+		<File RelativePath=".\RECSYDT_TR7.F"/>
+		<File RelativePath=".\SB03MX.F"/>
+		<File RelativePath=".\SB03MY.F"/>
+		<File RelativePath=".\SB04PY.F"/>
+		<File RelativePath=".\SG03AX.F"/>
+		<File RelativePath=".\SG03AY.F"/></Filter></Files>
+	<Globals/></VisualStudioProject>
