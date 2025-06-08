@@ -1,7 +1,7 @@
 # matrix-polynomial-public
 Publicly-available version of the codebase used for the "Fast and Parallel Evaluation of Matrix Polynomials" paper
 
-# Benchmarking Code for [Paper Title Here]
+# Benchmarking Code for Fast and Parallel Evaluation of Matrix Polynomials
 
 This repository contains the code used to generate results for the academic paper:
 
