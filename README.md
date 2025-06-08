@@ -38,4 +38,5 @@ Prof. Sivan Toledo
 Blavatnik School of Computer Science, Tel Aviv University.  
 stoledo@mail.tau.ac.il
 
-License: This code is shared under [choose a license, e.g., MIT, if applicable] for academic and non-commercial use.
+License: This code is licensed under the [MIT License](https://opensource.org/license/mit). Please provide proper attribution if used in academic work.  
+While commercial use is permitted under the MIT License, this code was developed for academic research purposes. If you use it in published work, please cite our paper.
